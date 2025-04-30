@@ -1,0 +1,13 @@
+{
+  "name": "CO2104_CW2_jh942",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "^15.3.1",
+    "react": "^19.1.0"
+  }
+}
