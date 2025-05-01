@@ -31,12 +31,12 @@ const Header = () => {
                         <li><Link href="/information">More Info</Link></li>
                         <li><Link href="/contact">Contact</Link></li>
                     </ul>
-                </div>
-                <div className="logo">
-                    <Link href="/">
-                        {/* Logo created using generative AI */}
-                        <img src="/favicon.png" alt="Ely Eel Guides Logo"/>
-                    </Link>
+                    <div className="logo">
+                        <Link href="/">
+                            {/* Logo created using generative AI */}
+                            <img src="/favicon.png" alt="Ely Eel Guides Logo"/>
+                        </Link>
+                    </div>
                 </div>
             </header>
 
