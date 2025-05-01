@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './Header.css';
 import Link from 'next/link';
 
@@ -9,6 +9,10 @@ const Header = () => {
     const toggleSideBar = () => {
         setIsSideBarOpen(!isSideBarOpen);
     }
+
+    useEffect(() => {
+        document.title = "Ely Eel Guides";
+    }, []);
 
     return (
         <div>
@@ -27,6 +31,12 @@ const Header = () => {
                         <li><Link href="/information">More Info</Link></li>
                         <li><Link href="/contact">Contact</Link></li>
                     </ul>
+                </div>
+                <div className="logo">
+                    <Link href="/">
+                        {/* Logo created using generative AI */}
+                        <img src="/favicon.png" alt="Ely Eel Guides Logo"/>
+                    </Link>
                 </div>
             </header>
 
