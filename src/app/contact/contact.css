@@ -1,0 +1,30 @@
+.title {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px #0000001A;
+}
+
+p {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact-info {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact-info li {
+    list-style: none;
+    margin: 5px 0;
+}
