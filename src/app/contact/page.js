@@ -15,6 +15,9 @@ const Contact = () => {
                     <li>Telephone: 01353 999999</li>
                 </ul>
             </div>
+            <p>
+                Alternatively, you can also ask our Tour Guide chatbot. Just click the button in the bottom right corner of the screen to open the chat.
+            </p>
         </div>
     );
 }
