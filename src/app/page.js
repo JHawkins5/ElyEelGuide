@@ -34,6 +34,12 @@ export default function Index() {
                     eat eel in Ely.
                 </p>
             </div>
+            <div className="buttons">
+                <Link href="/transport">View transport links</Link>
+                <Link href="/dining">View places to eat</Link>
+                <Link href="/accommodation">View places to stay</Link>
+                <Link href="/activities">View things to do</Link>
+            </div>
         </div>
     );
 }
