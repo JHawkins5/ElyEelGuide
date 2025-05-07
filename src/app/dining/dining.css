@@ -26,7 +26,7 @@
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 24px;
     color: #333;
-    text-align: left;
+    text-align: center;
     margin: 20px;
     text-shadow: 1px 1px 3px #0000001A;
 }
@@ -37,7 +37,7 @@
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 18px;
     color: #555;
-    text-align: left;
+    text-align: center;
     margin: 20px;
     line-height: 1.5;
 }
