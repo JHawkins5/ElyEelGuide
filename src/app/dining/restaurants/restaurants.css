@@ -8,3 +8,96 @@
     margin: 20px 0;
     text-shadow: 1px 1px 3px #0000001A;
 }
+
+/* Restaurants */
+.restaurant {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: start;
+}
+
+.restaurant-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.restaurant-image {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.restaurant h2 {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+    text-shadow: 1px 1px 3px #0000001A;
+}
+
+.restaurant p {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 18px;
+    color: #555;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.restaurant .address {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 16px;
+    color: #777;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.ratings {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.rating-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Buttons to other pages */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: span 2;
+}
+
+.buttons a {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #2e7d32;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons a:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
