@@ -46,6 +46,17 @@ const Transport = () => {
                             <Link href="https://bustimes.org/localities/ely-cambs">Bustimes</Link>
                         </div>
                     </div>
+                    <div className="method">
+                        <h2>Travelling by Plane</h2>
+                        <p>
+                            The nearest airport to Ely is London Stansted Airport. It is a 50 minute drive from Ely, via either Cambridge or Newmarket.
+                            Alternatively, Stansted Airport is accessible via a direct train from Ely station.
+                            You can visit the Stansted Airport website for more information on flights and transport to and from the airport.
+                        </p>
+                        <div className="buttons">
+                            <Link href="https://www.stanstedairport.com/">Stansted Airport</Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* Map using the leaflet library */}
