@@ -5,9 +5,19 @@ import Link from 'next/link';
 
 const Header = () => {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+    const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+    const [isSideBarDropDownOpen, setIsSideBarDropDownOpen] = useState(false);
 
     const toggleSideBar = () => {
         setIsSideBarOpen(!isSideBarOpen);
+    }
+
+    const toggleDropDown = () => {
+        setIsDropDownOpen(!isDropDownOpen);
+    }
+
+    const toggleSideBarDropDown = () => {
+        setIsSideBarDropDownOpen(!isSideBarDropDownOpen);
     }
 
     useEffect(() => {
@@ -25,7 +35,17 @@ const Header = () => {
                     <ul className="navbar-links">
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/transport">Transport</Link></li>
-                        <li><Link href="/dining">Where to Eat</Link></li>
+                        {/* Dropdown menu */}
+                        <li className="dropdown" onMouseEnter={toggleDropDown} onMouseLeave={toggleDropDown}>
+                            <Link href="/dining" className="dropdown-toggle">Where to Eat</Link>
+                            {isDropDownOpen && !isSideBarOpen &&(
+                                <ul className="dropdown-menu">
+                                    <li><Link href="/dining/restaurants">Restaurants</Link></li>
+                                    <li><Link href="/dining/cafes">Cafes</Link></li>
+                                    <li><Link href="/dining/eel">Eel Dishes</Link></li>
+                                </ul>
+                            )}
+                        </li>
                         <li><Link href="/accommodation">Where to Stay</Link></li>
                         <li><Link href="/activities">What to Do</Link></li>
                         <li><Link href="/information">More Info</Link></li>
@@ -42,10 +62,21 @@ const Header = () => {
 
             {/* Sidebar - opens when the hamburger icon is clicked */}
             <nav className={`sidebar ${isSideBarOpen ? 'open' : ''}`}>
+                <button className="sidebar-close" onClick={toggleSideBar}>x</button>
                 <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/transport">Transport</Link></li>
-                    <li><Link href="/dining">Where to Eat</Link></li>
+                    {/* Dropdown menu */}
+                    <li className="dropdown" onMouseEnter={toggleSideBarDropDown} onMouseLeave={toggleSideBarDropDown}>
+                        <Link href="/dining" className="dropdown-toggle">Where to Eat</Link>
+                        {isSideBarDropDownOpen && (
+                            <ul className="dropdown-menu">
+                                <li><Link href="/dining/restaurants">Restaurants</Link></li>
+                                <li><Link href="/dining/cafes">Cafes</Link></li>
+                                <li><Link href="/dining/eel">Eel Dishes</Link></li>
+                            </ul>
+                        )}
+                    </li>
                     <li><Link href="/accommodation">Where to Stay</Link></li>
                     <li><Link href="/activities">What to Do</Link></li>
                     <li><Link href="/information">More Info</Link></li>
