@@ -2,6 +2,7 @@
 import React, {useEffect} from 'react';
 import Link from "next/link";
 import './index.css';
+import Button from "@/components/Button/Button";
 
 export default function Index() {
     return (
@@ -39,10 +40,10 @@ export default function Index() {
             </div>
             {/* Buttons to other pages */}
             <div className="buttons">
-                <Link href="/transport">View transport links</Link>
-                <Link href="/dining">View places to eat</Link>
-                <Link href="/accommodation">View places to stay</Link>
-                <Link href="/activities">View things to do</Link>
+                <Button href="/transport">View transport links</Button>
+                <Button href="/dining">View places to eat</Button>
+                <Button href="/accommodation">View places to stay</Button>
+                <Button href="/activities">View things to do</Button>
             </div>
         </div>
     );

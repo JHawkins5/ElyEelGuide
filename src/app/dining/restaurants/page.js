@@ -3,6 +3,7 @@ import React from 'react';
 import './restaurants.css';
 import Link from 'next/link';
 import Rating from "@/components/Rating/Rating";
+import Button from "@/components/Button/Button";
 
 const Restaurants = () => {
     return (
@@ -43,7 +44,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="https://www.mangiareristorante.co.uk">Website</Link>
+                        <Button href="https://www.mangiareristorante.co.uk">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -74,7 +75,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="https://www.sushiandsalad.com">Website</Link>
+                        <Button href="https://www.sushiandsalad.com">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -103,7 +104,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="">Website</Link>
+                        <Button href="">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -132,7 +133,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="">Website</Link>
+                        <Button href="">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -161,7 +162,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="">Website</Link>
+                        <Button href="">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -190,7 +191,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="">Website</Link>
+                        <Button href="">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -219,7 +220,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="">Website</Link>
+                        <Button href="">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -248,7 +249,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="">Website</Link>
+                        <Button href="">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -277,7 +278,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="">Website</Link>
+                        <Button href="">Website</Button>
                     </div>
                 </div>
                 <div className="restaurant">
@@ -306,7 +307,7 @@ const Restaurants = () => {
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">
-                        <Link href="">Website</Link>
+                        <Button href="">Website</Button>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './dining.css';
 import Link from 'next/link';
+import Button from "@/components/Button/Button";
 
 const Dining = () => {
     return (
@@ -16,7 +17,7 @@ const Dining = () => {
                     Click here to view a list of all the restaurants in Ely, and find the one for you!
                 </p>
                 <div className="buttons">
-                    <Link href="/dining/restaurants">View restaurants</Link>
+                    <Button href="/dining/restaurants">View restaurants</Button>
                 </div>
             </div>
             <div className="cafes">
@@ -28,7 +29,7 @@ const Dining = () => {
                     Click here to find the perfect café for you!
                 </p>
                 <div className="buttons">
-                    <Link href="/dining/cafes">View cafés</Link>
+                    <Button href="/dining/cafes">View cafés</Button>
                 </div>
             </div>
             <div className="eel">
@@ -40,7 +41,7 @@ const Dining = () => {
                     Click below to use our eel recommender to find the best eel dish for you!
                 </p>
                 <div className="buttons">
-                    <Link href="/dining/eel">Find eel dishes</Link>
+                    <Button href="/dining/eel">Find eel dishes</Button>
                 </div>
             </div>
         </div>

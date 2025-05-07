@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './transport.css';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Link from "next/link";
+import Button from "@/components/Button/Button";
 
 const Transport = () => {
     return (
@@ -31,8 +32,8 @@ const Transport = () => {
                             The station is operated by Greater Anglia, and you can check the train times and book tickets on their website. Alternatively, you can use sites such as Trainline.
                         </p>
                         <div className="buttons">
-                            <Link href="https://www.greateranglia.co.uk/">Greater Anglia</Link>
-                            <Link href="https://www.thetrainline.com/">Trainline</Link>
+                            <Button href="https://www.greateranglia.co.uk/">Greater Anglia</Button>
+                            <Button href="https://www.thetrainline.com/">Trainline</Button>
                         </div>
                     </div>
                     <div className="method">
@@ -43,7 +44,7 @@ const Transport = () => {
                             You can find a full list of bus routes on Bustimes.
                         </p>
                         <div className="buttons">
-                            <Link href="https://bustimes.org/localities/ely-cambs">Bustimes</Link>
+                            <Button href="https://bustimes.org/localities/ely-cambs">Bustimes</Button>
                         </div>
                     </div>
                     <div className="method">
@@ -54,7 +55,7 @@ const Transport = () => {
                             You can visit the Stansted Airport website for more information on flights and transport to and from the airport.
                         </p>
                         <div className="buttons">
-                            <Link href="https://www.stanstedairport.com/">Stansted Airport</Link>
+                            <Button href="https://www.stanstedairport.com/">Stansted Airport</Button>
                         </div>
                     </div>
                 </div>
