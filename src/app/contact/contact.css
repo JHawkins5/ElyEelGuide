@@ -1,3 +1,4 @@
+/* Title */
 .title {
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 40px;
@@ -8,6 +9,7 @@
     text-shadow: 1px 1px 3px #0000001A;
 }
 
+/* Text */
 p {
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 20px;

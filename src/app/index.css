@@ -1,3 +1,4 @@
+/* Banner */
 .banner {
     position: relative;
     width: 100%;
@@ -24,6 +25,7 @@
     text-align: center;
 }
 
+/* List */
 .list-title {
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 28px;
@@ -69,6 +71,7 @@
     text-align: center;
 }
 
+/* Site Info */
 .site-info {
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 24px;
@@ -81,6 +84,7 @@
     text-align: center;
 }
 
+/* Buttons to other pages */
 .buttons {
     display: flex;
     justify-content: center;

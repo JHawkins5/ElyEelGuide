@@ -6,10 +6,13 @@ import './index.css';
 export default function Index() {
     return (
         <div>
+            {/* Banner */}
             <div className="banner">
                 <img className="banner-img" src="/banner.png" alt="Photo of Ely Cathedral"/>
                 <div className="banner-text">Welcome to Ely!</div>
             </div>
+
+            {/* Main content */}
             <div className="ely-info">
                 <h2 className="list-title">Key facts about Ely</h2>
                 <ul className="ely-info-list">
@@ -34,6 +37,7 @@ export default function Index() {
                     eat eel in Ely.
                 </p>
             </div>
+            {/* Buttons to other pages */}
             <div className="buttons">
                 <Link href="/transport">View transport links</Link>
                 <Link href="/dining">View places to eat</Link>
