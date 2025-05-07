@@ -1,3 +1,4 @@
+/* Title */
 .title {
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 40px;
@@ -6,4 +7,64 @@
     text-align: center;
     margin: 20px 0;
     text-shadow: 1px 1px 3px #0000001A;
+}
+
+/* Restaurants, cafés, and eel */
+.restaurants,
+.cafes,
+.eel {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurants h2,
+.cafes h2,
+.eel h2 {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    margin: 20px;
+    text-shadow: 1px 1px 3px #0000001A;
+}
+
+.restaurants p,
+.cafes p,
+.eel p {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+/* Buttons to other pages */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.buttons a {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #2e7d32;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons a:hover {
+    background-color: #218838;
+    transform: scale(1.05);
 }
