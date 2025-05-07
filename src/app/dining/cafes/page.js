@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Cafes = () => {
     return (
         <div>
-
+            <h1 className="title">Cafés in Ely</h1>
         </div>
     );
 }

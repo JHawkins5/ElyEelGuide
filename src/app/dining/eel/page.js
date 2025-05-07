@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Eel = () => {
     return (
         <div>
-
+            <h1 className="title">Ely Eel Dishes</h1>
         </div>
     );
 }

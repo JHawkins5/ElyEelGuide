@@ -1,0 +1,10 @@
+/* Title */
+.title {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px #0000001A;
+}
