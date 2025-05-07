@@ -62,7 +62,7 @@ const Header = () => {
 
             {/* Sidebar - opens when the hamburger icon is clicked */}
             <nav className={`sidebar ${isSideBarOpen ? 'open' : ''}`}>
-                <button className="sidebar-close" onClick={toggleSideBar}>x</button>
+                <button className="sidebar-close" onClick={toggleSideBar}>&times;</button>
                 <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/transport">Transport</Link></li>
