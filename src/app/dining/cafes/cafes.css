@@ -8,3 +8,78 @@
     margin: 20px 0;
     text-shadow: 1px 1px 3px #0000001A;
 }
+
+/* Cafés */
+.cafe {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: start;
+}
+
+.cafe-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cafe-image {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cafe h2 {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+    text-shadow: 1px 1px 3px #0000001A;
+}
+
+.cafe p {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 18px;
+    color: #555;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.cafe .address {
+    font-family: "Baskerville Old Face", sans-serif;
+    font-size: 16px;
+    color: #777;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.ratings {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.rating-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Buttons to other pages */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: span 2;
+}
