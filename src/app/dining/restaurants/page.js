@@ -29,7 +29,7 @@ const Restaurants = () => {
                             10 Downham Road, Ely, CB6 2FE
                         </p>
                     </div>
-                    <img src="/mangiare.png" alt="Mangiare Ristorante Italiano" className="restaurant-image"/>
+                    <img src="/restaurants/mangiare.png" alt="Mangiare Ristorante Italiano" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -61,7 +61,7 @@ const Restaurants = () => {
                             9 High Street Passage, Ely, CB7 4NB
                         </p>
                     </div>
-                    <img src="/sushi-salad.webp" alt="Sushi and Salad" className="restaurant-image"/>
+                    <img src="/restaurants/sushi-salad.webp" alt="Sushi and Salad" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -92,7 +92,7 @@ const Restaurants = () => {
                             The Maltings, Ship Lane, Ely, CB7 4BB
                         </p>
                     </div>
-                    <img src="/rbk.png" alt="Riverside Bar and Kitchen" className="restaurant-image"/>
+                    <img src="/restaurants/rbk.png" alt="Riverside Bar and Kitchen" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -123,7 +123,7 @@ const Restaurants = () => {
                             7 High Street Passage, Ely, CB7 4NB
                         </p>
                     </div>
-                    <img src="/griddle.jpg" alt="Griddle Bar and Meat House" className="restaurant-image"/>
+                    <img src="/restaurants/griddle.jpg" alt="Griddle Bar and Meat House" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -153,7 +153,7 @@ const Restaurants = () => {
                             8 St. Mary's Street, Ely, CB7 4ES
                         </p>
                     </div>
-                    <img src="/eatthai.jpg" alt="Eat Thai Restaurant" className="restaurant-image"/>
+                    <img src="/restaurants/eatthai.jpg" alt="Eat Thai Restaurant" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -183,7 +183,7 @@ const Restaurants = () => {
                             5 Market Place, Ely, CB7 4NU
                         </p>
                     </div>
-                    <img src="/fishhouse.jpg" alt="The Fish House Ely" className="restaurant-image"/>
+                    <img src="/restaurants/fishhouse.jpg" alt="The Fish House Ely" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -211,7 +211,7 @@ const Restaurants = () => {
                             2 Lynn Road, Ely, CB7 4EJ
                         </p>
                     </div>
-                    <img src="/lambhotel.jpg" alt="The Lamb Hotel" className="restaurant-image"/>
+                    <img src="/restaurants/lambhotel.jpg" alt="The Lamb Hotel" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -241,7 +241,7 @@ const Restaurants = () => {
                             42 Annesdale, Ely, CB7 4BN
                         </p>
                     </div>
-                    <img src="/thecutter.jpg" alt="The Cutter Inn" className="restaurant-image"/>
+                    <img src="/restaurants/thecutter.jpg" alt="The Cutter Inn" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -273,7 +273,7 @@ const Restaurants = () => {
                             5 Annesdale, Ely, CB7 4BN
                         </p>
                     </div>
-                    <img src="/urbanfresh.jpg" alt="Urban Fresh Ely" className="restaurant-image"/>
+                    <img src="/restaurants/urbanfresh.jpg" alt="Urban Fresh Ely" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
@@ -303,7 +303,7 @@ const Restaurants = () => {
                             Unit 1, Leisure Village, 10 Downham Road, Ely, CB6 2FE
                         </p>
                     </div>
-                    <img src="/isleofely.jpeg" alt="Isle of Ely" className="restaurant-image"/>
+                    <img src="/restaurants/isleofely.jpeg" alt="Isle of Ely" className="restaurant-image"/>
                     {/* Ratings */}
                     <div className="ratings">
                         <div className="rating-group">
