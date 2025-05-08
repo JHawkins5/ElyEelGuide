@@ -1,4 +1,7 @@
 This project was created as part of my coursework for my User Interface Design and Evaluation module in my second year of university.
+The task was to create a Hi-Fi prototype for a tourist website for a city in the UK, so I chose Ely, where I am from.
+
+As this is a prototype, there is no backend, however I may integrate a backend in future.
 
 I created this project using React - instructions on how to run the project can be found below:
 
@@ -9,3 +12,4 @@ I created this project using React - instructions on how to run the project can 
 5. Run 'yarn install' to install all the dependencies in the project.
 6. Once this has finished, run 'yarn run dev' to start the project in developer mode.
 7. Open a browser and navigate to http://localhost:3000
+8. Explore the site!
