@@ -53,6 +53,10 @@
     line-height: 1.5;
 }
 
+.price {
+    text-align: left;
+}
+
 .ratings {
     grid-column: span 2;
     display: flex;
