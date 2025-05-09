@@ -83,6 +83,10 @@ const Activities = () => {
                 <p>
                     Starting at either Annesdale or the Maltings, this route takes you along the river bank, past the Cathedral and back to the city centre. The route is approximately 2 miles long and takes about 1 hour to walk.
                 </p>
+                <h3>Central Ely to the Leisure Centre</h3>
+                <p>
+                    Starting in the city centre, this route takes you through some of the residential areas of Ely, utilising an underpass to cross the busy A10 road. The route is approximately 1.5 miles long and takes about 30 minutes to walk.
+                </p>
             </div>
         </div>
     );
