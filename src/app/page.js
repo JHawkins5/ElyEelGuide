@@ -27,6 +27,9 @@ export default function Index() {
                         'district of eels'.
                     </li>
                 </ul>
+                <div className="buttons">
+                    <Button href="/information">More information</Button>
+                </div>
             </div>
             <div className="site-info">
                 <p>
