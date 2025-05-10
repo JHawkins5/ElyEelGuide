@@ -4,163 +4,91 @@ import './cafes.css';
 import Rating from "@/components/Rating/Rating";
 import Button from "@/components/Button/Button";
 
+// List of cafés. As this is a frontend-only prototype, these are hard-coded.
+// These would be stored and fetched from a backend database.
+// Additionally, the TripAdvisor and Google ratings are hardcoded, and accurate at the time of creation.
+// In a final product, these would be fetched using either an API or web scraping.
+
+const cafesData = [
+    {
+        name: "Marmalade and Jam",
+        description: "An independent, family-run café located in the heart of Ely, which serves sandwiches, toasties, and scones, among other things. They are also dog-friendly, so are a great option for a coffee break while out walking your dog.",
+        address: "27 High Street, Ely, CB7 4LQ",
+        tripAdvisorRating: 4.9,
+        googleRating: 4.9,
+        image: "/cafes/marmaladeandjam.jpg",
+        website: "https://www.facebook.com/people/Marmalade-Jam-Ely/61562648739519/"
+    },
+    {
+        name: "Julia's Tea Rooms",
+        description: "Julia's is a small café located on the High Street, which serves cakes, sandwiches, and toasties. Just round the corner from the Cathedral, it is a great place to stop for a coffee and cake after visiting.",
+        address: "16 - 18 High Street, Ely, CB7 4JU",
+        tripAdvisorRating: 4.3,
+        googleRating: 4.5,
+        image: "/cafes/julias.jpg",
+        website: "https://juliastearooms.weebly.com/"
+    },
+    {
+        name: "The Almonry",
+        description: "The Almonry is a café and restaurant located on the High Street, which has a large outdoor seating area with views of the Cathedral. They serve sandwiches, a couple of pies, and a selection of cakes. They are another great option for a coffee break after visiting the Cathedral.",
+        address: "36 High Street, Ely, CB7 4DL",
+        tripAdvisorRating: 3.5,
+        googleRating: 4.5,
+        image: "/cafes/almonry.jpg",
+        website: "https://www.cdc.events/almonry-kitchen/"
+    },
+    {
+        name: "Tom's Cakes",
+        description: "Tom's Cakes is a small café business with a shop on the High Street, and another in St. Ives. They serve a variety of cakes and pastries, and are highly recommended.",
+        address: "31 High Street, Ely, CB7 4LQ",
+        tripAdvisorRating: 5,
+        googleRating: 4.7,
+        image: "/cafes/toms.jpg",
+        website: "https://www.tomscakes.co.uk/"
+    },
+    {
+        name: "Market Kitchen",
+        description: "Market Kitchen is a small café located in the Ely Market, which serves a variety of cakes and pastries. They also serve warm meals such as fried breakfasts, and are a great option for a quick bite to eat while shopping.",
+        address: "5 Market Street, Ely, CB7 4PB",
+        tripAdvisorRating: 4.4,
+        googleRating: 4.4,
+        image: "/cafes/marketkitchen.jpg",
+        website: null
+    }
+];
+
 const Cafes = () => {
     return (
         <div>
             <h1 className="title">Cafés in Ely</h1>
-            {/* List of cafés. As this is a frontend-only prototype, these are hard-coded.
-            These would be stored and fetched from a backend database.
-            Additionally, the TripAdvisor and Google ratings are hardcoded, and accurate at the time of creation.
-            In a final product, these would be fetched using either an API or web scraping. */}
             <div className="cafe-list">
-                <div className="cafe">
-                    <div className="cafe-info">
-                        {/* Café name */}
-                        <h2>Marmalade and Jam</h2>
-                        {/* Café description and address */}
-                        <p className="description">
-                            An independent, family-run café located in the heart of Ely, which serves sandwiches, toasties, and scones, among other things.
-                            They are also dog-friendly, so are a great option for a coffee break while out walking your dog.
-                        </p>
-                        <p className="address">
-                            27 High Street, Ely, CB7 4LQ
-                        </p>
-                    </div>
-                    <img src="/cafes/marmaladeandjam.jpg" alt="Marmalade and Jam" className="cafe-image"/>
-                    {/* Ratings */}
-                    <div className="ratings">
-                        <div className="rating-group">
-                            <p className="trip-advisor">TripAdvisor rating:</p>
-                            <Rating rating={4.9} className="rating"/>
+                {cafesData.map((cafe, index) => (
+                    <div key={index} className="cafe">
+                        <div className="cafe-info">
+                            <h2>{cafe.name}</h2>
+                            <p className="description">{cafe.description}</p>
+                            <p className="address">{cafe.address}</p>
                         </div>
-                        <div className="rating-group">
-                            <p className="google">Google rating:</p>
-                            <Rating rating={4.9} className="rating"/>
+                        <img src={cafe.image} alt={cafe.name} className="cafe-image" />
+                        <div className="ratings">
+                            <div className="rating-group">
+                                <p className="trip-advisor">TripAdvisor rating:</p>
+                                <Rating rating={cafe.tripAdvisorRating} className="rating" />
+                            </div>
+                            <div className="rating-group">
+                                <p className="google">Google rating:</p>
+                                <Rating rating={cafe.googleRating} className="rating" />
+                            </div>
                         </div>
-                    </div>
-                    {/* Café website */}
-                    <div className="buttons">
-                        <Button href="https://www.facebook.com/people/Marmalade-Jam-Ely/61562648739519/">Website</Button>
-                    </div>
-                </div>
-                <div className="cafe">
-                    <div className="cafe-info">
-                        {/* Café name */}
-                        <h2>Julia's Tea Rooms</h2>
-                        {/* Café description and address */}
-                        <p className="description">
-                            Julia's is a small café located on the High Street, which serves cakes, sandwiches, and toasties.
-                            Just round the corner from the Cathedral, it is a great place to stop for a coffee and cake after visiting.
-                        </p>
-                        <p className="address">
-                            16 - 18 High Street, Ely, CB7 4JU
-                        </p>
-                    </div>
-                    <img src="/cafes/julias.jpg" alt="Julia's Tea Rooms" className="cafe-image"/>
-                    {/* Ratings */}
-                    <div className="ratings">
-                        <div className="rating-group">
-                            <p className="trip-advisor">TripAdvisor rating:</p>
-                            <Rating rating={4.3} className="rating"/>
-                        </div>
-                        <div className="rating-group">
-                            <p className="google">Google rating:</p>
-                            <Rating rating={4.5} className="rating"/>
+                        <div className="buttons">
+                            {cafe.website ? (
+                                <Button href={cafe.website}>Website</Button>
+                            ) : (
+                                <p>No website available</p>
+                            )}
                         </div>
                     </div>
-                    {/* Café website */}
-                    <div className="buttons">
-                        <Button href="https://juliastearooms.weebly.com/">Website</Button>
-                    </div>
-                </div>
-                <div className="cafe">
-                    <div className="cafe-info">
-                        {/* Café name */}
-                        <h2>The Almonry</h2>
-                        {/* Café description and address */}
-                        <p className="description">
-                            The Almonry is a café and restaurant located on the High Street, which has a large outdoor seating area with views of the Cathedral.
-                            They serve sandwiches, a couple of pies, and a selection of cakes.
-                            They are another great option for a coffee break after visiting the Cathedral.
-                        </p>
-                        <p className="address">
-                            36 High Street, Ely, CB7 4DL
-                        </p>
-                    </div>
-                    <img src="/cafes/almonry.jpg" alt="The Almonry" className="cafe-image"/>
-                    {/* Ratings */}
-                    <div className="ratings">
-                        <div className="rating-group">
-                            <p className="trip-advisor">TripAdvisor rating:</p>
-                            <Rating rating={3.5} className="rating"/>
-                        </div>
-                        <div className="rating-group">
-                            <p className="google">Google rating:</p>
-                            <Rating rating={4.5} className="rating"/>
-                        </div>
-                    </div>
-                    {/* Café website */}
-                    <div className="buttons">
-                        <Button href="https://www.cdc.events/almonry-kitchen/">Website</Button>
-                    </div>
-                </div>
-                <div className="cafe">
-                    <div className="cafe-info">
-                        {/* Café name */}
-                        <h2>Tom's Cakes</h2>
-                        {/* Café description and address */}
-                        <p className="description">
-                            Tom's Cakes is a small café business with a shop on the High Street, and another in St. Ives.
-                            They serve a variety of cakes and pastries, and are highly recommended.
-                        </p>
-                        <p className="address">
-                            31 High Street, Ely, CB7 4LQ
-                        </p>
-                    </div>
-                    <img src="/cafes/toms.jpg" alt="Tom's Cakes" className="cafe-image"/>
-                    {/* Ratings */}
-                    <div className="ratings">
-                        <div className="rating-group">
-                            <p className="trip-advisor">TripAdvisor rating:</p>
-                            <Rating rating={5} className="rating"/>
-                        </div>
-                        <div className="rating-group">
-                            <p className="google">Google rating:</p>
-                            <Rating rating={4.7} className="rating"/>
-                        </div>
-                    </div>
-                    {/* Café website */}
-                    <div className="buttons">
-                        <Button href="https://www.tomscakes.co.uk/">Website</Button>
-                    </div>
-                </div>
-                <div className="cafe">
-                    <div className="cafe-info">
-                        {/* Café name */}
-                        <h2>Market Kitchen</h2>
-                        {/* Café description and address */}
-                        <p className="description">
-                            Market Kitchen is a small café located in the Ely Market, which serves a variety of cakes and pastries.
-                            They also serve warm meals such as fried breakfasts, and are a great option for a quick bite to eat while shopping.
-                        </p>
-                        <p className="address">
-                            5 Market Street, Ely, CB7 4PB
-                        </p>
-                    </div>
-                    <img src="/cafes/marketkitchen.jpg" alt="Market Kitchen" className="cafe-image"/>
-                    {/* Ratings */}
-                    <div className="ratings">
-                        <div className="rating-group">
-                            <p className="trip-advisor">TripAdvisor rating:</p>
-                            <Rating rating={4.4} className="rating"/>
-                        </div>
-                        <div className="rating-group">
-                            <p className="google">Google rating:</p>
-                            <Rating rating={4.4} className="rating"/>
-                        </div>
-                    </div>
-                    {/* This café doesn't have a website */}
-                </div>
+                ))}
             </div>
         </div>
     );
