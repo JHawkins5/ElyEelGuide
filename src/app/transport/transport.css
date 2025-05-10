@@ -51,6 +51,15 @@
     line-height: 1.5;
 }
 
+.tts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: span 2;
+    gap: 20px;
+}
+
 /* Buttons to other pages */
 .buttons {
     display: flex;

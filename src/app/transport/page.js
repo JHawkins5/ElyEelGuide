@@ -3,6 +3,7 @@ import React from 'react';
 import './transport.css';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Button from "@/components/Button/Button";
+import TTSButton from "@/components/TTSButton/TTSButton";
 
 const Transport = () => {
     const transportMethods = [
@@ -43,6 +44,11 @@ const Transport = () => {
                         <div className="method" key={index}>
                             <h2>{method.title}</h2>
                             <p>{method.content}</p>
+
+                            {/* Add a button to read the content aloud */}
+                            <div className="tts-container">
+                                <TTSButton text={method.content} />
+                            </div>
 
                             {/* Add links if they exist */}
                             {method.links && (

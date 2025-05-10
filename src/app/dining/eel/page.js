@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import './eel.css';
 import Rating from "@/components/Rating/Rating";
 import Button from "@/components/Button/Button";
+import TTSButton from "@/components/TTSButton/TTSButton";
 
 const Eel = () => {
     const [filter, setFilter] = useState('all');
@@ -42,6 +43,9 @@ const Eel = () => {
                             <Rating rating={4.8} className="rating"/>
                         </div>
                     </div>
+                    <div className="tts-container">
+                        <TTSButton text="Sushi and Salad serve Unadon - a main which contains grilled eel on a bed of rice, with broccoli, leek, pickled ginger, scallions, and sesame seeds. As eel is such a delicacy, a main serving is priced quite highly compared to other dishes. However, the quality of the eel is top-notch, and the dish is well worth the price. If you are looking for a larger eel dish, this is the one for you!"/>
+                    </div>
                     {/* Restaurant website */}
                     <div className="buttons">
                         <Button href="https://www.sushiandsalad.com">Website</Button>
@@ -74,6 +78,9 @@ const Eel = () => {
                             <p className="google">Google rating:</p>
                             <Rating rating={4.7} className="rating"/>
                         </div>
+                    </div>
+                    <div className="tts-container">
+                        <TTSButton text="Griddle Bar and Meat House serve Grilled Eel with Miso Butter and Pickled Vegetables as a tasty and unique starter. If you are unsure whether you will like eel and just want a smaller portion, this is a great way to try it out. Griddle Bar and Meat House isn't as highly rated as Sushi and Salad, but it is still a great place to try eel."/>
                     </div>
                     {/* Restaurant website */}
                     <div className="buttons">

@@ -107,3 +107,12 @@
     background-color: #218838;
     transform: scale(1.05);
 }
+
+.tts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: span 2;
+    gap: 20px;
+}

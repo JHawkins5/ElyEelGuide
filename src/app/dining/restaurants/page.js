@@ -3,6 +3,7 @@ import React from 'react';
 import './restaurants.css';
 import Rating from "@/components/Rating/Rating";
 import Button from "@/components/Button/Button";
+import TTSButton from "@/components/TTSButton/TTSButton";
 
 // List of restaurants. As this is a frontend-only prototype, these are hard-coded.
 // These would be stored and fetched from a backend database.
@@ -124,6 +125,9 @@ const Restaurants = () => {
                                 <p className="google">Google rating:</p>
                                 <Rating rating={restaurant.googleRating} className="rating" />
                             </div>
+                        </div>
+                        <div className="tts-container">
+                            <TTSButton text={restaurant.description} />
                         </div>
                         <div className="buttons">
                             {restaurant.website ? (

@@ -10,9 +10,7 @@
 }
 
 /* Restaurants, cafés, and eel */
-.restaurants,
-.cafes,
-.eel {
+.content {
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 20px;
@@ -20,9 +18,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.restaurants h2,
-.cafes h2,
-.eel h2 {
+.content h2 {
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 24px;
     color: #333;
@@ -31,9 +27,7 @@
     text-shadow: 1px 1px 3px #0000001A;
 }
 
-.restaurants p,
-.cafes p,
-.eel p {
+.content p {
     font-family: "Baskerville Old Face", sans-serif;
     font-size: 18px;
     color: #555;
@@ -49,4 +43,13 @@
     align-items: center;
     gap: 20px;
     margin: 20px 0;
+}
+
+.tts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: span 2;
+    gap: 20px;
 }
