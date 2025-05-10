@@ -8,7 +8,7 @@
 }
 
 /* Container for the text content */
-.content {
+.transport-content {
     flex: 1;
     margin-right: 400px;
 }
@@ -31,6 +31,7 @@
     padding: 20px;
     margin: 20px;
     box-shadow: 0 4px 8px #00000019;
+    align-items: start;
 }
 
 .method h2 {

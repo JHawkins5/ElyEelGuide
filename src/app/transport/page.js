@@ -37,7 +37,7 @@ const Transport = () => {
     return (
         <div className="container">
             {/* Transport methods content */}
-            <div className="content">
+            <div className="transport-content">
                 <h1 className="title">Transport to Ely</h1>
                 <div className="methods">
                     {transportMethods.map((method, index) => (
